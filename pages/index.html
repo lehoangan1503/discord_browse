@@ -208,7 +208,7 @@
         <a class="btn btn-ghost text-xl">LOGO HERE</a>
       </div>
       <div class="flex-1 gap-2">
-        <div class="form-control lg:ms-24">
+        <div class="form-control lg:ms-24 hidden sm:block">
           <input
             type="text"
             placeholder="Search..."
@@ -290,18 +290,26 @@
         </div>
       </div>
     </div>
+
     <div class="pt-16"></div>
+    <div class="form-control block sm:hidden mx-auto mt-3">
+      <input
+        type="text"
+        placeholder="Search..."
+        class="input input-bordered block mx-auto w-3/4 md:w-72 xl:w-96 h-11 focus:outline-none"
+      />
+    </div>
     <!-- navbar -->
     <!-- Discord Section title -->
     <div class="w-full flex flex-col items-start justify-center overflow-hidden p-4 mt-5">
       <div class="md:text-2xl text-xl lg:text-4xl text-center text-white relative z-20">Public Discord Servers</div>
-      <div class="w-[30rem] relative">
+      <div class="w-[20rem] sm:w-[30rem] relative">
         <div
-          class="absolute inset-x-0 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm"
+          class="absolute inset-x-0 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-full sm:w-3/4 blur-sm"
         ></div>
 
         <div
-          class="absolute inset-x-0 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4"
+          class="absolute inset-x-0 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-full sm:w-3/4"
         ></div>
 
         <div
@@ -316,7 +324,10 @@
     <!-- Discord Section title -->
     <!-- Discord List -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
-      <a href="#" class="card card-side bg-base-300 shadow-xl">
+      <a href="#" class="card card-side bg-base-300 shadow-xl relative group">
+        <div
+          class="absolute inset-x-0 h-px w-3/4 mx-auto -top-px shadow-2xl bg-gradient-to-r from-transparent via-sky-500 to-transparent hidden group-hover:block"
+        ></div>
         <figure class="p-6 pe-0 w-40 flex-shrink-0 flex-col gap-4">
           <div class="avatar w-20 h-20 xl:w-24 xl:h-24 rounded-full overflow-hidden flex-grow-0">
             <img src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie" />
@@ -349,72 +360,10 @@
           </div>
         </div>
       </a>
-      <a href="#" class="card card-side bg-base-300 shadow-xl">
-        <figure class="p-6 pe-0 w-40 flex-shrink-0 flex-col gap-4">
-          <div class="avatar w-24 h-24 rounded-full overflow-hidden flex-grow-0">
-            <img src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie" />
-          </div>
-          <div class="flex justify-center items-center gap-2 h-auto">
-            <svg class="fill-primary" width="24" height="24">
-              <use href="#group-icon"></use>
-            </svg>
-            <div class="font-medium text-primary">888,888</div>
-          </div>
-          <btn class="btn bg-info-content min-h-11 h-11 flex justify-center hover:bg-base-200">
-            <svg width="16" height="16">
-              <use href="#gems-icon"></use>
-            </svg>
-            <div class="mx-auto">25</div>
-          </btn>
-        </figure>
-        <div class="card-body p-6">
-          <div class="card-title font-light text-2xl line-clamp-1">New movie is released!</div>
-          <div class="line-clamp-4 font-light text-sm">
-            Welcome to the biggest Among Us Social community, the world's largest dedicated Among Us Discord with over
-            320k+ members.
-          </div>
-          <div class="card-actions justify-center font-light mt-auto h-11 items-center">
-            <div class="text-sm">Gaming</div>
-            <div class="mx-1 text-base opacity-50">|</div>
-            <div class="text-sm">Among us</div>
-            <div class="mx-1 text-base opacity-50">|</div>
-            <div class="text-sm">Gaming</div>
-          </div>
-        </div> </a
-      ><a href="#" class="card card-side bg-base-300 shadow-xl">
-        <figure class="p-6 pe-0 w-40 flex-shrink-0 flex-col gap-4">
-          <div class="avatar w-24 h-24 rounded-full overflow-hidden flex-grow-0">
-            <img src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie" />
-          </div>
-          <div class="flex justify-center items-center gap-2 h-auto">
-            <svg class="fill-primary" width="24" height="24">
-              <use href="#group-icon"></use>
-            </svg>
-            <div class="font-medium text-primary">888,888</div>
-          </div>
-          <btn class="btn bg-info-content min-h-11 h-11 flex justify-center hover:bg-base-200">
-            <svg width="16" height="16">
-              <use href="#gems-icon"></use>
-            </svg>
-            <div class="mx-auto">25</div>
-          </btn>
-        </figure>
-        <div class="card-body p-6">
-          <div class="card-title font-light text-2xl line-clamp-1">New movie is released!</div>
-          <div class="line-clamp-4 font-light text-sm">
-            Welcome to the biggest Among Us Social community, the world's largest dedicated Among Us Discord with over
-            320k+ members.
-          </div>
-          <div class="card-actions justify-center font-light mt-auto h-11 items-center">
-            <div class="text-sm">Gaming</div>
-            <div class="mx-1 text-base opacity-50">|</div>
-            <div class="text-sm">Among us</div>
-            <div class="mx-1 text-base opacity-50">|</div>
-            <div class="text-sm">Gaming</div>
-          </div>
-        </div>
-      </a>
-      <a href="#" class="card card-side bg-base-300 shadow-xl">
+      <a href="#" class="card card-side bg-base-300 shadow-xl relative group">
+        <div
+          class="absolute inset-x-0 h-px w-3/4 mx-auto -top-px shadow-2xl bg-gradient-to-r from-transparent via-sky-500 to-transparent hidden group-hover:block"
+        ></div>
         <figure class="p-6 pe-0 w-40 flex-shrink-0 flex-col gap-4">
           <div class="avatar w-24 h-24 rounded-full overflow-hidden flex-grow-0">
             <img src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie" />
@@ -447,7 +396,10 @@
           </div>
         </div>
       </a>
-      <a href="#" class="card card-side bg-base-300 shadow-xl">
+      <a href="#" class="card card-side bg-base-300 shadow-xl relative group">
+        <div
+          class="absolute inset-x-0 h-px w-3/4 mx-auto -top-px shadow-2xl bg-gradient-to-r from-transparent via-sky-500 to-transparent hidden group-hover:block"
+        ></div>
         <figure class="p-6 pe-0 w-40 flex-shrink-0 flex-col gap-4">
           <div class="avatar w-24 h-24 rounded-full overflow-hidden flex-grow-0">
             <img src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie" />
@@ -480,7 +432,10 @@
           </div>
         </div>
       </a>
-      <a href="#" class="card card-side bg-base-300 shadow-xl">
+      <a href="#" class="card card-side bg-base-300 shadow-xl relative group">
+        <div
+          class="absolute inset-x-0 h-px w-3/4 mx-auto -top-px shadow-2xl bg-gradient-to-r from-transparent via-sky-500 to-transparent hidden group-hover:block"
+        ></div>
         <figure class="p-6 pe-0 w-40 flex-shrink-0 flex-col gap-4">
           <div class="avatar w-24 h-24 rounded-full overflow-hidden flex-grow-0">
             <img src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie" />
@@ -513,7 +468,10 @@
           </div>
         </div>
       </a>
-      <a href="#" class="card card-side bg-base-300 shadow-xl">
+      <a href="#" class="card card-side bg-base-300 shadow-xl relative group">
+        <div
+          class="absolute inset-x-0 h-px w-3/4 mx-auto -top-px shadow-2xl bg-gradient-to-r from-transparent via-sky-500 to-transparent hidden group-hover:block"
+        ></div>
         <figure class="p-6 pe-0 w-40 flex-shrink-0 flex-col gap-4">
           <div class="avatar w-24 h-24 rounded-full overflow-hidden flex-grow-0">
             <img src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie" />
@@ -546,7 +504,10 @@
           </div>
         </div>
       </a>
-      <a href="#" class="card card-side bg-base-300 shadow-xl">
+      <a href="#" class="card card-side bg-base-300 shadow-xl relative group">
+        <div
+          class="absolute inset-x-0 h-px w-3/4 mx-auto -top-px shadow-2xl bg-gradient-to-r from-transparent via-sky-500 to-transparent hidden group-hover:block"
+        ></div>
         <figure class="p-6 pe-0 w-40 flex-shrink-0 flex-col gap-4">
           <div class="avatar w-24 h-24 rounded-full overflow-hidden flex-grow-0">
             <img src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie" />
@@ -579,7 +540,82 @@
           </div>
         </div>
       </a>
-      <a href="#" class="card card-side bg-base-300 shadow-xl">
+      <a href="#" class="card card-side bg-base-300 shadow-xl relative group">
+        <div
+          class="absolute inset-x-0 h-px w-3/4 mx-auto -top-px shadow-2xl bg-gradient-to-r from-transparent via-sky-500 to-transparent hidden group-hover:block"
+        ></div>
+        <figure class="p-6 pe-0 w-40 flex-shrink-0 flex-col gap-4">
+          <div class="avatar w-24 h-24 rounded-full overflow-hidden flex-grow-0">
+            <img src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie" />
+          </div>
+          <div class="flex justify-center items-center gap-2 h-auto">
+            <svg class="fill-primary" width="24" height="24">
+              <use href="#group-icon"></use>
+            </svg>
+            <div class="font-medium text-primary">888,888</div>
+          </div>
+          <btn class="btn bg-info-content min-h-11 h-11 flex justify-center hover:bg-base-200">
+            <svg width="16" height="16">
+              <use href="#gems-icon"></use>
+            </svg>
+            <div class="mx-auto">25</div>
+          </btn>
+        </figure>
+        <div class="card-body p-6">
+          <div class="card-title font-light text-2xl line-clamp-1">New movie is released!</div>
+          <div class="line-clamp-4 font-light text-sm">
+            Welcome to the biggest Among Us Social community, the world's largest dedicated Among Us Discord with over
+            320k+ members.
+          </div>
+          <div class="card-actions justify-center font-light mt-auto h-11 items-center">
+            <div class="text-sm">Gaming</div>
+            <div class="mx-1 text-base opacity-50">|</div>
+            <div class="text-sm">Among us</div>
+            <div class="mx-1 text-base opacity-50">|</div>
+            <div class="text-sm">Gaming</div>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="card card-side bg-base-300 shadow-xl relative group">
+        <div
+          class="absolute inset-x-0 h-px w-3/4 mx-auto -top-px shadow-2xl bg-gradient-to-r from-transparent via-sky-500 to-transparent hidden group-hover:block"
+        ></div>
+        <figure class="p-6 pe-0 w-40 flex-shrink-0 flex-col gap-4">
+          <div class="avatar w-24 h-24 rounded-full overflow-hidden flex-grow-0">
+            <img src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie" />
+          </div>
+          <div class="flex justify-center items-center gap-2 h-auto">
+            <svg class="fill-primary" width="24" height="24">
+              <use href="#group-icon"></use>
+            </svg>
+            <div class="font-medium text-primary">888,888</div>
+          </div>
+          <btn class="btn bg-info-content min-h-11 h-11 flex justify-center hover:bg-base-200">
+            <svg width="16" height="16">
+              <use href="#gems-icon"></use>
+            </svg>
+            <div class="mx-auto">25</div>
+          </btn>
+        </figure>
+        <div class="card-body p-6">
+          <div class="card-title font-light text-2xl line-clamp-1">New movie is released!</div>
+          <div class="line-clamp-4 font-light text-sm">
+            Welcome to the biggest Among Us Social community, the world's largest dedicated Among Us Discord with over
+            320k+ members.
+          </div>
+          <div class="card-actions justify-center font-light mt-auto h-11 items-center">
+            <div class="text-sm">Gaming</div>
+            <div class="mx-1 text-base opacity-50">|</div>
+            <div class="text-sm">Among us</div>
+            <div class="mx-1 text-base opacity-50">|</div>
+            <div class="text-sm">Gaming</div>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="card card-side bg-base-300 shadow-xl relative group">
+        <div
+          class="absolute inset-x-0 h-px w-3/4 mx-auto -top-px shadow-2xl bg-gradient-to-r from-transparent via-sky-500 to-transparent hidden group-hover:block"
+        ></div>
         <figure class="p-6 pe-0 w-40 flex-shrink-0 flex-col gap-4">
           <div class="avatar w-24 h-24 rounded-full overflow-hidden flex-grow-0">
             <img src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie" />
@@ -627,7 +663,7 @@
     <!-- Blog Heading -->
     <!-- List Blog -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 bg-base-200">
-      <div class="card shadow-xl bg-primary-content">
+      <a href="#" class="card shadow-xl bg-primary-content">
         <figure class="h-48">
           <img
             src="https://i0.wp.com/blog.discordservers.com/wp-content/uploads/2022/05/319BD783-BAE1-4809-8645-6973ED70E1CE.jpg?fit=1920%2C1080&ssl=1"
@@ -647,8 +683,8 @@
             <div class="badge badge-outline">2 min read</div>
           </div>
         </div>
-      </div>
-      <div class="card shadow-xl bg-primary-content">
+      </a>
+      <a href="#" class="card shadow-xl bg-primary-content">
         <figure class="h-48">
           <img
             src="https://i0.wp.com/blog.discordservers.com/wp-content/uploads/2022/05/319BD783-BAE1-4809-8645-6973ED70E1CE.jpg?fit=1920%2C1080&ssl=1"
@@ -671,8 +707,8 @@
             <div class="badge badge-outline">2 min read</div>
           </div>
         </div>
-      </div>
-      <div class="card shadow-xl bg-primary-content">
+      </a>
+      <a href="#" class="card shadow-xl bg-primary-content">
         <figure class="h-48">
           <img
             src="https://i0.wp.com/blog.discordservers.com/wp-content/uploads/2022/05/319BD783-BAE1-4809-8645-6973ED70E1CE.jpg?fit=1920%2C1080&ssl=1"
@@ -692,8 +728,8 @@
             <div class="badge badge-outline">2 min read</div>
           </div>
         </div>
-      </div>
-      <div class="card shadow-xl bg-primary-content">
+      </a>
+      <a href="#" class="card shadow-xl bg-primary-content">
         <figure class="h-48">
           <img
             src="https://i0.wp.com/blog.discordservers.com/wp-content/uploads/2022/05/319BD783-BAE1-4809-8645-6973ED70E1CE.jpg?fit=1920%2C1080&ssl=1"
@@ -713,8 +749,8 @@
             <div class="badge badge-outline">2 min read</div>
           </div>
         </div>
-      </div>
-      <div class="card shadow-xl bg-primary-content">
+      </a>
+      <a href="#" class="card shadow-xl bg-primary-content">
         <figure class="h-48">
           <img
             src="https://i0.wp.com/blog.discordservers.com/wp-content/uploads/2022/05/319BD783-BAE1-4809-8645-6973ED70E1CE.jpg?fit=1920%2C1080&ssl=1"
@@ -734,8 +770,8 @@
             <div class="badge badge-outline">2 min read</div>
           </div>
         </div>
-      </div>
-      <div class="card shadow-xl bg-primary-content">
+      </a>
+      <a href="#" class="card shadow-xl bg-primary-content">
         <figure class="h-48">
           <img
             src="https://i0.wp.com/blog.discordservers.com/wp-content/uploads/2022/05/319BD783-BAE1-4809-8645-6973ED70E1CE.jpg?fit=1920%2C1080&ssl=1"
@@ -755,7 +791,7 @@
             <div class="badge badge-outline">2 min read</div>
           </div>
         </div>
-      </div>
+      </a>
     </div>
     <div class="flex justify-center bg-base-200 pt-5 pb-16">
       <button class="btn btn-primary flex justify-center">View More Articles</button>
@@ -765,13 +801,13 @@
     <!-- Discord Section title -->
     <div class="w-full flex flex-col items-start justify-center overflow-hidden p-4 mt-5">
       <div class="md:text-2xl text-xl lg:text-4xl text-center text-white relative z-20">Popular Discord Servers</div>
-      <div class="w-[30rem] relative">
+      <div class="w-[20rem] sm:w-[30rem] relative">
         <div
-          class="absolute inset-x-0 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm"
+          class="absolute inset-x-0 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-full sm:w-3/4 blur-sm"
         ></div>
 
         <div
-          class="absolute inset-x-0 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4"
+          class="absolute inset-x-0 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-full sm:w-3/4"
         ></div>
 
         <div
@@ -786,7 +822,10 @@
     <!-- Discord Section title -->
     <!-- Discord List -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
-      <a href="#" class="card card-side bg-base-300 shadow-xl">
+      <a href="#" class="card card-side bg-base-300 shadow-xl relative group">
+        <div
+          class="absolute inset-x-0 h-px w-3/4 mx-auto -top-px shadow-2xl bg-gradient-to-r from-transparent via-sky-500 to-transparent hidden group-hover:block"
+        ></div>
         <figure class="p-6 pe-0 w-40 flex-shrink-0 flex-col gap-4">
           <div class="avatar w-20 h-20 xl:w-24 xl:h-24 rounded-full overflow-hidden flex-grow-0">
             <img src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie" />
@@ -819,72 +858,10 @@
           </div>
         </div>
       </a>
-      <a href="#" class="card card-side bg-base-300 shadow-xl">
-        <figure class="p-6 pe-0 w-40 flex-shrink-0 flex-col gap-4">
-          <div class="avatar w-24 h-24 rounded-full overflow-hidden flex-grow-0">
-            <img src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie" />
-          </div>
-          <div class="flex justify-center items-center gap-2 h-auto">
-            <svg class="fill-primary" width="24" height="24">
-              <use href="#group-icon"></use>
-            </svg>
-            <div class="font-medium text-primary">888,888</div>
-          </div>
-          <btn class="btn bg-info-content min-h-11 h-11 flex justify-center hover:bg-base-200">
-            <svg width="16" height="16">
-              <use href="#gems-icon"></use>
-            </svg>
-            <div class="mx-auto">25</div>
-          </btn>
-        </figure>
-        <div class="card-body p-6">
-          <div class="card-title font-light text-2xl line-clamp-1">New movie is released!</div>
-          <div class="line-clamp-4 font-light text-sm">
-            Welcome to the biggest Among Us Social community, the world's largest dedicated Among Us Discord with over
-            320k+ members.
-          </div>
-          <div class="card-actions justify-center font-light mt-auto h-11 items-center">
-            <div class="text-sm">Gaming</div>
-            <div class="mx-1 text-base opacity-50">|</div>
-            <div class="text-sm">Among us</div>
-            <div class="mx-1 text-base opacity-50">|</div>
-            <div class="text-sm">Gaming</div>
-          </div>
-        </div> </a
-      ><a href="#" class="card card-side bg-base-300 shadow-xl">
-        <figure class="p-6 pe-0 w-40 flex-shrink-0 flex-col gap-4">
-          <div class="avatar w-24 h-24 rounded-full overflow-hidden flex-grow-0">
-            <img src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie" />
-          </div>
-          <div class="flex justify-center items-center gap-2 h-auto">
-            <svg class="fill-primary" width="24" height="24">
-              <use href="#group-icon"></use>
-            </svg>
-            <div class="font-medium text-primary">888,888</div>
-          </div>
-          <btn class="btn bg-info-content min-h-11 h-11 flex justify-center hover:bg-base-200">
-            <svg width="16" height="16">
-              <use href="#gems-icon"></use>
-            </svg>
-            <div class="mx-auto">25</div>
-          </btn>
-        </figure>
-        <div class="card-body p-6">
-          <div class="card-title font-light text-2xl line-clamp-1">New movie is released!</div>
-          <div class="line-clamp-4 font-light text-sm">
-            Welcome to the biggest Among Us Social community, the world's largest dedicated Among Us Discord with over
-            320k+ members.
-          </div>
-          <div class="card-actions justify-center font-light mt-auto h-11 items-center">
-            <div class="text-sm">Gaming</div>
-            <div class="mx-1 text-base opacity-50">|</div>
-            <div class="text-sm">Among us</div>
-            <div class="mx-1 text-base opacity-50">|</div>
-            <div class="text-sm">Gaming</div>
-          </div>
-        </div>
-      </a>
-      <a href="#" class="card card-side bg-base-300 shadow-xl">
+      <a href="#" class="card card-side bg-base-300 shadow-xl relative group">
+        <div
+          class="absolute inset-x-0 h-px w-3/4 mx-auto -top-px shadow-2xl bg-gradient-to-r from-transparent via-sky-500 to-transparent hidden group-hover:block"
+        ></div>
         <figure class="p-6 pe-0 w-40 flex-shrink-0 flex-col gap-4">
           <div class="avatar w-24 h-24 rounded-full overflow-hidden flex-grow-0">
             <img src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie" />
@@ -917,7 +894,10 @@
           </div>
         </div>
       </a>
-      <a href="#" class="card card-side bg-base-300 shadow-xl">
+      <a href="#" class="card card-side bg-base-300 shadow-xl relative group">
+        <div
+          class="absolute inset-x-0 h-px w-3/4 mx-auto -top-px shadow-2xl bg-gradient-to-r from-transparent via-sky-500 to-transparent hidden group-hover:block"
+        ></div>
         <figure class="p-6 pe-0 w-40 flex-shrink-0 flex-col gap-4">
           <div class="avatar w-24 h-24 rounded-full overflow-hidden flex-grow-0">
             <img src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie" />
@@ -950,7 +930,10 @@
           </div>
         </div>
       </a>
-      <a href="#" class="card card-side bg-base-300 shadow-xl">
+      <a href="#" class="card card-side bg-base-300 shadow-xl relative group">
+        <div
+          class="absolute inset-x-0 h-px w-3/4 mx-auto -top-px shadow-2xl bg-gradient-to-r from-transparent via-sky-500 to-transparent hidden group-hover:block"
+        ></div>
         <figure class="p-6 pe-0 w-40 flex-shrink-0 flex-col gap-4">
           <div class="avatar w-24 h-24 rounded-full overflow-hidden flex-grow-0">
             <img src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie" />
@@ -983,7 +966,10 @@
           </div>
         </div>
       </a>
-      <a href="#" class="card card-side bg-base-300 shadow-xl">
+      <a href="#" class="card card-side bg-base-300 shadow-xl relative group">
+        <div
+          class="absolute inset-x-0 h-px w-3/4 mx-auto -top-px shadow-2xl bg-gradient-to-r from-transparent via-sky-500 to-transparent hidden group-hover:block"
+        ></div>
         <figure class="p-6 pe-0 w-40 flex-shrink-0 flex-col gap-4">
           <div class="avatar w-24 h-24 rounded-full overflow-hidden flex-grow-0">
             <img src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie" />
@@ -1016,7 +1002,10 @@
           </div>
         </div>
       </a>
-      <a href="#" class="card card-side bg-base-300 shadow-xl">
+      <a href="#" class="card card-side bg-base-300 shadow-xl relative group">
+        <div
+          class="absolute inset-x-0 h-px w-3/4 mx-auto -top-px shadow-2xl bg-gradient-to-r from-transparent via-sky-500 to-transparent hidden group-hover:block"
+        ></div>
         <figure class="p-6 pe-0 w-40 flex-shrink-0 flex-col gap-4">
           <div class="avatar w-24 h-24 rounded-full overflow-hidden flex-grow-0">
             <img src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie" />
@@ -1049,7 +1038,82 @@
           </div>
         </div>
       </a>
-      <a href="#" class="card card-side bg-base-300 shadow-xl">
+      <a href="#" class="card card-side bg-base-300 shadow-xl relative group">
+        <div
+          class="absolute inset-x-0 h-px w-3/4 mx-auto -top-px shadow-2xl bg-gradient-to-r from-transparent via-sky-500 to-transparent hidden group-hover:block"
+        ></div>
+        <figure class="p-6 pe-0 w-40 flex-shrink-0 flex-col gap-4">
+          <div class="avatar w-24 h-24 rounded-full overflow-hidden flex-grow-0">
+            <img src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie" />
+          </div>
+          <div class="flex justify-center items-center gap-2 h-auto">
+            <svg class="fill-primary" width="24" height="24">
+              <use href="#group-icon"></use>
+            </svg>
+            <div class="font-medium text-primary">888,888</div>
+          </div>
+          <btn class="btn bg-info-content min-h-11 h-11 flex justify-center hover:bg-base-200">
+            <svg width="16" height="16">
+              <use href="#gems-icon"></use>
+            </svg>
+            <div class="mx-auto">25</div>
+          </btn>
+        </figure>
+        <div class="card-body p-6">
+          <div class="card-title font-light text-2xl line-clamp-1">New movie is released!</div>
+          <div class="line-clamp-4 font-light text-sm">
+            Welcome to the biggest Among Us Social community, the world's largest dedicated Among Us Discord with over
+            320k+ members.
+          </div>
+          <div class="card-actions justify-center font-light mt-auto h-11 items-center">
+            <div class="text-sm">Gaming</div>
+            <div class="mx-1 text-base opacity-50">|</div>
+            <div class="text-sm">Among us</div>
+            <div class="mx-1 text-base opacity-50">|</div>
+            <div class="text-sm">Gaming</div>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="card card-side bg-base-300 shadow-xl relative group">
+        <div
+          class="absolute inset-x-0 h-px w-3/4 mx-auto -top-px shadow-2xl bg-gradient-to-r from-transparent via-sky-500 to-transparent hidden group-hover:block"
+        ></div>
+        <figure class="p-6 pe-0 w-40 flex-shrink-0 flex-col gap-4">
+          <div class="avatar w-24 h-24 rounded-full overflow-hidden flex-grow-0">
+            <img src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie" />
+          </div>
+          <div class="flex justify-center items-center gap-2 h-auto">
+            <svg class="fill-primary" width="24" height="24">
+              <use href="#group-icon"></use>
+            </svg>
+            <div class="font-medium text-primary">888,888</div>
+          </div>
+          <btn class="btn bg-info-content min-h-11 h-11 flex justify-center hover:bg-base-200">
+            <svg width="16" height="16">
+              <use href="#gems-icon"></use>
+            </svg>
+            <div class="mx-auto">25</div>
+          </btn>
+        </figure>
+        <div class="card-body p-6">
+          <div class="card-title font-light text-2xl line-clamp-1">New movie is released!</div>
+          <div class="line-clamp-4 font-light text-sm">
+            Welcome to the biggest Among Us Social community, the world's largest dedicated Among Us Discord with over
+            320k+ members.
+          </div>
+          <div class="card-actions justify-center font-light mt-auto h-11 items-center">
+            <div class="text-sm">Gaming</div>
+            <div class="mx-1 text-base opacity-50">|</div>
+            <div class="text-sm">Among us</div>
+            <div class="mx-1 text-base opacity-50">|</div>
+            <div class="text-sm">Gaming</div>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="card card-side bg-base-300 shadow-xl relative group">
+        <div
+          class="absolute inset-x-0 h-px w-3/4 mx-auto -top-px shadow-2xl bg-gradient-to-r from-transparent via-sky-500 to-transparent hidden group-hover:block"
+        ></div>
         <figure class="p-6 pe-0 w-40 flex-shrink-0 flex-col gap-4">
           <div class="avatar w-24 h-24 rounded-full overflow-hidden flex-grow-0">
             <img src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie" />
@@ -1092,7 +1156,7 @@
     </div>
     <!-- Discord List -->
     <!-- Footer -->
-    <footer class="footer p-10 bg-base-200 text-base-content">
+    <footer class="footer p-3 sm:p-10 bg-base-200 text-base-content">
       <nav>
         <h6 class="footer-title">Services</h6>
         <a class="link link-hover">Branding</a>
