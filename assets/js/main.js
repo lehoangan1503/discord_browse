@@ -33,9 +33,6 @@ const handleClick = {
 document.addEventListener("DOMContentLoaded", function () {
   const dropdownBtn = document.getElementById("js-dropdown");
   const dropdownContent = document.getElementById("js-dropdown-content");
-  const shareBtn = document.getElementById("js-share-btn");
-  const dropdownShareContent = document.getElementById("js-dropdown-share-content");
 
   handleClick.dropdownClick(dropdownBtn, dropdownContent);
-  handleClick.dropdownClick(shareBtn, dropdownShareContent);
 });
